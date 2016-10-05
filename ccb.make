@@ -47,3 +47,4 @@ libraries[ckeditor][patch][] = "working/patches/wysiwyg-ckeditor4support-1853550
 ;Other Modules
 ; -------
 projects[jquery_update][version] = "2.7"
+projects[features][version] = "2.10"

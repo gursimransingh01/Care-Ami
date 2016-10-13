@@ -1,0 +1,79 @@
+diff --git a/addressfield.module b/addressfield.module
+index 25b277d..76c0a76 100644
+--- a/addressfield.module
++++ b/addressfield.module
+@@ -463,6 +463,7 @@ function addressfield_field_widget_info() {
+     'field types' => array('addressfield'),
+     'settings' => array(
+       'available_countries' => array(),
++      'preferred_countries' => '',
+       // Can't use variable_get('site_default_country') here because it would
+       // set the value in stone. Instead, the site_default option allows the
+       // default country to always reflect the current site setting.
+@@ -499,6 +500,12 @@ function addressfield_field_widget_settings_form($field, $instance) {
+       '#default_value' => $settings['default_country'],
+       '#empty_value' => '',
+     );
++     $form['preferred_countries'] = array(
++      '#type' => 'textarea',
++      '#title' => t('Preferred countries'),
++      '#description' => t('These countries will appear at the top of the list.Enter one country code per line.'),
++      '#default_value' => $settings['preferred_countries'],
++    );
+     $form['format_handlers'] = array(
+       '#type' => 'checkboxes',
+       '#title' => t('Format handlers'),
+@@ -873,6 +880,7 @@ function _addressfield_country_options_list($field = NULL, $instance = NULL) {
+   else {
+     require_once DRUPAL_ROOT . '/includes/locale.inc';
+     $countries = country_get_list();
++    $preferred_countries = array_keys($countries);
+   }
+ 
+   if (isset($field)) {
+@@ -895,7 +903,45 @@ function _addressfield_country_options_list($field = NULL, $instance = NULL) {
+         break;
+       }
+     }
++
++    // Get preferred countries.
++    foreach ($instances as $instance) {
++      if (!empty($instance['widget']['settings']['preferred_countries'])) {
++        $preferred_countries = array_intersect($preferred_countries, explode("\r\n", $instance['widget']['settings']['preferred_countries']));
++      }
++    }
++  }
++
++  // Sort countries list so preferred countries are at the top.
++  if (!empty($preferred_countries)) {
++    $countries = addressfield_sort_countries($countries, $preferred_countries);
+   }
+ 
+   return $countries;
+ }
++
++
++/**
++ * Place the preferred countries at the top of the list.
++ *
++ * @param $countries
++ *   List of countries keyed by country code.
++ * @param $preferred_countries
++ *   Array of country codes which should appear at the top of the list.
++ */
++function addressfield_sort_countries($countries, $preferred_countries) {
++  $top = array();
++
++  // Loop through the preferred countries, adding them to the $top array and
++  // removing them from the main list.
++  foreach ($preferred_countries as $code) {
++    $top[$code] = $countries[$code];
++    unset($countries[$code]);
++  }
++
++  // Merge the two parts together.
++  $merged = array_merge($top, $countries);
++
++  return $merged;
++}
++

@@ -70,6 +70,8 @@ projects[adminimal_theme][version] = "1.24"
 projects[adminimal_admin_menu][version] = "1.7"
 projects[module_filter][version] = "2.0"
 projects[module_filter][version] = "2.0"
+projects[admin_views][version] = "1.6"
+
 
 ; Grant Access
 ; ------

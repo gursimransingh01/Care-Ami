@@ -7,7 +7,7 @@ projects[drupal][version] = "7.51"
 
 ; Memcache
 ; ---------
-projects[memcache][version] = "1.5"
+;projects[memcache][version] = "1.5"
 
 ; Translations
 ; ------------

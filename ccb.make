@@ -4,6 +4,7 @@ core = 7.x
 api = 2
 projects[drupal][version] = "7.51"
 
+
 ; Memcache
 ; ---------
 projects[memcache][version] = "1.5"
@@ -93,7 +94,8 @@ libraries[ckeditor][patch][] = "working/patches/wysiwyg-ckeditor4support-1853550
 ;Webform
 ; --------
 projects[webform][version] = "4.14"
-projects[webform_addmore][version] = "1.2"
+projects[wfm][version] = "1.x-dev"
+projects[wfm][download][revision] = "26ec752ec314395c6afd5db8736271f107315dc0"
 
 ;Modules
 ; ---------
@@ -101,7 +103,7 @@ projects[context][version] = "3.7"
 projects[libraries][version] = "2.3"
 projects[rules][version] = "2.9"
 projects[views][version] = "3.14"
-projects[ctools][version] = "1.10"
+projects[ctools][version] = "1.11"
 projects[entity][version] = "1.7"
 projects[references][version] = "2.1"
 projects[token][version] = "1.6"

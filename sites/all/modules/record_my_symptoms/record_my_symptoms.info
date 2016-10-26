@@ -1,0 +1,15 @@
+name = Record my Symptoms
+description = Creating Record my Symptoms page for our website
+core = 7.x
+package = Record my Symptoms
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_name_of_medication
+features[field_base][] = field_time_of_day_taken
+features[field_instance][] = node-record_my_symptoms-body
+features[field_instance][] = node-record_my_symptoms-field_name_of_medication
+features[field_instance][] = node-record_my_symptoms-field_time_of_day_taken
+features[node][] = record_my_symptoms

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Record my Symptoms feature.
+ */
+
+include_once 'record_my_symptoms.features.inc';

@@ -29,8 +29,6 @@ projects[email][version] = "1.3"
 projects[phone][version] = "1.0-beta1"
 projects[telephone][version] = "1.0-alpha1"
 projects[field_collection][version] = "1.0-beta11"
-projects[field_group][version] = "1.5"
-
 
 ; URL field
 ; -----------
@@ -38,7 +36,7 @@ projects[url][version] = "1.0"
 
 ; Calendar
 ; ----------
-;projects[calendar][version] = "3.5"
+projects[calendar][version] = "3.5"
 
 ; Date 
 ; -------
@@ -126,3 +124,15 @@ projects[link][version] = "1.4"
 projects[views_bootstrap][version] = "3.1"
 projects[css_injector][version] = "1.10"
 projects[smart_trim][version] = "1.5"
+
+; Profile2
+; ----------
+projects[profile2][version] = "1.3"
+
+; field_group
+; ----------
+projects[field_group][version] = "1.5"
+
+; Full Calendar
+; ----------
+projects[fullcalendar][version] = "2.0"

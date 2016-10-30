@@ -11,7 +11,7 @@ projects[drupal][version] = "7.51"
 
 ; Translations
 ; ------------
-projects[i18n][version] = "1.13"
+projects[i18n][version] = "1.14"
 projects[i18n][patch][] = "working/patches/1173130_i18n_poll_module_5.patch"
 projects[entity_translation][version] = "1.0-beta5"
 projects[title][version] = "1.0-alpha8"
@@ -24,15 +24,21 @@ projects[localize_fields][version] = "1.6"
 ; ----------
 projects[addressfield][version] = "1.2"
 projects[addressfield][patch][] = "working/patches/addressfield_preferred_countries_on_top_of_list.patch"
-projects[field_permissions][version] = "1.0-beta2"
+projects[field_permissions][version] = "1.0"
 projects[email][version] = "1.3"
 projects[phone][version] = "1.0-beta1"
 projects[telephone][version] = "1.0-alpha1"
 projects[field_collection][version] = "1.0-beta11"
+projects[field_group][version] = "1.5"
 
 ; URL field
 ; -----------
 projects[url][version] = "1.0"
+
+; Profile
+; -----------
+projects[profile2][version] = "1.3"
+
 
 ; Calendar
 ; ----------
@@ -47,7 +53,7 @@ projects[date_popup_timepicker][version] = "1.0-beta1"
 ; Bootstrap
 ; ----------
 projects[bootstrap][type] = "theme"
-projects[bootstrap][version] = "3.6"
+projects[bootstrap][version] = "3.7"
 projects[bootstrap][patch][] = "working/patches/bootstrap-scroll-to.patch"
 
 ; Generate Auto URL
@@ -106,7 +112,7 @@ projects[libraries][version] = "2.3"
 projects[rules][version] = "2.9"
 projects[views][version] = "3.14"
 projects[ctools][version] = "1.11"
-projects[entity][version] = "1.7"
+projects[entity][version] = "1.8"
 projects[references][version] = "2.1"
 projects[token][version] = "1.6"
 projects[feeds][version] = "2.0-beta2"
@@ -114,7 +120,7 @@ projects[feeds_tamper][version] = "1.1"
 projects[job_scheduler][version] = "2.0-alpha3"
 projects[advancedqueue][version] = "1.0-beta3"
 projects[entity_bundle_plugin][version] = "1.0-beta2"
-projects[entityreference][version] = "1.1"
+projects[entityreference][version] = "1.2"
 projects[views_bulk_operations][version] = "3.3"
 projects[inline_entity_form][version] = "1.8"
 projects[jquery_update][version] = "2.7"

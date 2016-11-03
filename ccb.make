@@ -53,7 +53,7 @@ projects[date_popup_timepicker][version] = "1.0-beta1"
 ; Bootstrap
 ; ----------
 projects[bootstrap][type] = "theme"
-projects[bootstrap][version] = "3.7"
+projects[bootstrap][version] = "3.8"
 projects[bootstrap][patch][] = "working/patches/bootstrap-scroll-to.patch"
 
 ; Generate Auto URL

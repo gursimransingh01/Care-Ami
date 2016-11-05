@@ -42,7 +42,7 @@ projects[profile2][version] = "1.3"
 
 ; Calendar
 ; ----------
-projects[calendar][version] = "3.5"
+
 
 ; Date 
 ; -------

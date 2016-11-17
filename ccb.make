@@ -49,7 +49,7 @@ libraries[fullcalendar][type] = "library"
 ;Print
 ; ------
 
-projects[printfriendly][version] = "3.0"
+projects[print][version] = "2.0"
 
 ; Date 
 ; -------

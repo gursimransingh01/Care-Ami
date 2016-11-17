@@ -39,6 +39,17 @@ projects[url][version] = "1.0"
 ; -----------
 projects[profile2][version] = "1.3"
 
+; Calendar
+; -----
+projects[fullcalendar][version] = "2.0"
+libraries[fullcalendar][download][subtree] = "fullcalendar-1.6.4/fullcalendar"
+libraries[fullcalendar][download][url] = "https://github.com/fullcalendar/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
+libraries[fullcalendar][type] = "library"
+
+;Print
+; ------
+
+projects[printfriendly][version] = "3.0"
 
 ; Date 
 ; -------
@@ -94,9 +105,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 libraries[ckeditor][patch][] = "working/patches/wysiwyg-ckeditor4support-1853550-220-D7.patch"
-libraries[fullcalendar][download][subtree] = "fullcalendar-1.6.4/fullcalendar"
-libraries[fullcalendar][download][url] = "https://github.com/fullcalendar/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
-libraries[fullcalendar][type] = "library"
+
 
 ;Webform
 ; --------
@@ -129,4 +138,3 @@ projects[link][version] = "1.4"
 projects[views_bootstrap][version] = "3.1"
 projects[css_injector][version] = "1.10"
 projects[smart_trim][version] = "1.5"
-projects[fullcalendar][version] = "2.0"

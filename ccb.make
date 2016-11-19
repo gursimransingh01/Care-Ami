@@ -30,6 +30,7 @@ projects[phone][version] = "1.0-beta1"
 projects[telephone][version] = "1.0-alpha1"
 projects[field_collection][version] = "1.0-beta11"
 projects[field_group][version] = "1.5"
+projects[conditional_fields][version] = "3.0-alpha2"
 
 ; URL field
 ; -----------

@@ -58,11 +58,13 @@ projects[date_ical][version] = "3.9"
 projects[date][version] = "2.9"
 projects[date_popup_timepicker][version] = "1.0-beta1"
 
-; Bootstrap
+; Themes
 ; ----------
 projects[bootstrap][type] = "theme"
 projects[bootstrap][version] = "3.8"
 projects[bootstrap][patch][] = "working/patches/bootstrap-scroll-to.patch"
+projects[professional_theme][type] = "theme"
+projects[professional_theme][version] = "2.05"
 
 ; Generate Auto URL
 ; ------------

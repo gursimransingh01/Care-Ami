@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Implements hook_schema()
+ */
+
+
+
+
+function progress_bar_schema() {
+  $schema['progress_bar'] = array(
+    // Example specification for table "progress_bar"
+    'description' => 'The base table for progress bar.',
+    'fields' => array(
+      'p_id' => array(
+        'description' => 'The primary identifier for the progress bar.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'patient_id' => array(
+        'description' => 'A field for storing patient ID',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'patient_status' => array(
+        'description' => 'A field for storing status of patient',
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+    'indexes' => array(
+      'progress_bar_patient_id' => array('patient_id'),
+    ),
+    // For documentation purposes only; foreign keys are not created in the
+    // database.
+    'foreign keys' => array(
+      'patient_id' => array(
+        'table' => 'users',
+        'columns' => array('uid' => 'uid'),
+      ),
+    ),
+    'primary key' => array('p_id'),
+  );
+  return $schema;
+}

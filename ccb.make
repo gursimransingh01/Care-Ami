@@ -87,6 +87,7 @@ projects[adminimal_admin_menu][version] = "1.7"
 projects[module_filter][version] = "2.0"
 projects[module_filter][version] = "2.0"
 projects[admin_views][version] = "1.6"
+projects[menu_attributes][version] = "1.0"
 
 
 ; Grant Access
@@ -142,4 +143,3 @@ projects[views_bootstrap][version] = "3.1"
 projects[css_injector][version] = "1.10"
 projects[smart_trim][version] = "1.5"
 projects[smtp][version] = "1.4"
-

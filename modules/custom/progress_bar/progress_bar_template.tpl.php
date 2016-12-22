@@ -46,11 +46,11 @@
 
 <div class="container">
 	<ul class="progressbar">
-		<li id="initial_referral" class="non-active">Initial Referral</li>
-		<li id="contact_phonecall" class="non-active">Contact Phonecall</li>
-		<li id="consult_review" class="non-active">Consult Review</li>
-		<li id="specialized_testing" class="non-active">Specialized Testing/Navigation Day</li>
-		<li id="results" class="non-active">Results</li>
-		<li id="triage" class="non-active">Triage (for first consult)</li>
+		<li id="initial_referral" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Initial Referral stage.">Initial Referral</li>
+		<li id="contact_phonecall" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Contact Phonecall stage.">Contact Phonecall</li>
+		<li id="consult_review" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Consult Review stage.">Consult Review</li>
+		<li id="specialized_testing" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Specialized Testing/Navigation Day stage.">Specialized Testing/Navigation Day</li>
+		<li id="results" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Results stage.">Results</li>
+		<li id="triage" class="non-active" data-toggle="tooltip" data-placement="bottom" title="This shows some information about the Triage (for first consult) stage.">Triage (for first consult)</li>
 	</ul>  
 </div>

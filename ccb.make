@@ -88,7 +88,7 @@ projects[module_filter][version] = "2.0"
 projects[module_filter][version] = "2.0"
 projects[admin_views][version] = "1.6"
 projects[menu_attributes][version] = "1.0"
-projects[menu_item_visibility][version] = "1.0"
+projects[menu_item_visibility][version] = "1.0-beta2"
 
 
 ; Grant Access

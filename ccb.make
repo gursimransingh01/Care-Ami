@@ -39,6 +39,7 @@ projects[url][version] = "1.0"
 ; Profile
 ; -----------
 projects[profile2][version] = "1.3"
+projects[profile2_regpath][version] = "1.13"
 
 ; Calendar
 ; -----
